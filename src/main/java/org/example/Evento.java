@@ -34,6 +34,7 @@ public class Evento {
         this.titolo = title;
         this.dataEvento = data;
         this.descrizione = descr;
+        this.tipoEvento = eventType;
         this.numPartecipanti = partecipanti;
     }
 
@@ -41,5 +42,47 @@ public class Evento {
         return this.id;
     }
 
-    
+    public Long setId(Long id) {
+        return this.id = id;
+    }
+
+    public String getTitolo () {
+        return this.titolo;
+    }
+
+    public String setTitolo(String tit) {
+        return this.titolo = tit;
+    }
+
+    public LocalDate getDataEvento() {
+        return this.dataEvento;
+    }
+
+    public LocalDate setDataEvento(LocalDate date) {
+        return this.dataEvento = date;
+    }
+
+    public String getDescrizione() {
+        return this.descrizione;
+    }
+
+    public String setDescrizione(String descr) {
+        return this.descrizione = descr;
+    }
+
+    public String getTipoEvento() {
+        return this.tipoEvento;
+    }
+
+    public String setTipoEvento(String type) {
+        return this.tipoEvento = type;
+    }
+
+    public int getNumPartecipanti() {
+        return this.numPartecipanti;
+    }
+
+    public int setNumPartecipanti(int num) {
+        return this.numPartecipanti = num;
+    }
 }
